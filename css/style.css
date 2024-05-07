@@ -25,6 +25,17 @@ html{
   z-index: 9;
 }
 
+.box {
+  background-color: tomato;
+  box-shadow: 3px 3px 6px rgba(0 0 0 / .4);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+  position: fixed;
+}
+
 .nav-list{
   display: flex;
   align-items: center;
@@ -172,6 +183,53 @@ html{
 }
 /* FIM PROJECTS */
 
+#contatos {
+  padding: 80px 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contatos form {
+  padding: 40px 20px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #FBFBFB;
+  box-shadow: 1px 0 6px rgba(0 0 0 / .05),
+              0   1px 6px rgba(0 0 0 / .05),
+              -1px 0 6px rgba(0 0 0 / .05);
+}
+
+#contatos form > *:not(h3) {
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 60%;
+  gap: 8px;
+}
+
+.form-control :is(input, textarea) {
+  width: 100%;
+  font-size: 1.05rem;
+  border: 1px solid #EBEBEB
+}
+
+.form-control :is(input, textarea):focus {
+  outline: 1px solid rgb(65 130 150 / .8);
+}
+
 /* INICIO RODAPE */
 footer{
   width: 100%;
@@ -193,6 +251,16 @@ footer p {
 }
 /* FIM RODAPE */
 
+
+form a {
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.vermelho {
+  color: red;
+}
 
 /* RESPONSIVIDADE */
 
